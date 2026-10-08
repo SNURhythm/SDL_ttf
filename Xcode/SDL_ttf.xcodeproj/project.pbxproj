@@ -981,6 +981,7 @@
 		00B7E1EA097E26C600826121 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				SKIP_INSTALL = YES;
 				USER_HEADER_SEARCH_PATHS = "\"$(SRCROOT)/../external/freetype/include\" \"$(SRCROOT)/../external/harfbuzz\" \"$(SRCROOT)/../external/harfbuzz/src\" \"$(PROJECT_DIR)/../../SDL/include\"";
 			};
@@ -989,6 +990,7 @@
 		00B7E1EB097E26C600826121 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				SKIP_INSTALL = YES;
 				USER_HEADER_SEARCH_PATHS = "\"$(SRCROOT)/../external/freetype/include\" \"$(SRCROOT)/../external/harfbuzz\" \"$(SRCROOT)/../external/harfbuzz/src\" \"$(PROJECT_DIR)/../../SDL/include\"";
 			};
