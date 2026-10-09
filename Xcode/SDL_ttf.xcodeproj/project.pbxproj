@@ -165,7 +165,7 @@
 		F34125C52D491AA800D6C2B7 /* SDL_hashtable_ttf.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SDL_hashtable_ttf.h; sourceTree = "<group>"; };
 		F34125C62D491AA800D6C2B7 /* SDL_hashtable_ttf.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = SDL_hashtable_ttf.c; sourceTree = "<group>"; };
 		F34126652D4B05F800D6C2B7 /* harfbuzz.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = harfbuzz.cc; path = ../external/harfbuzz/src/harfbuzz.cc; sourceTree = "<group>"; };
-		F3412A332D4C8DBF00D6C2B7 /* SDL3.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL3.framework; path = macOS/SDL3.framework; sourceTree = "<group>"; };
+		F3412A332D4C8DBF00D6C2B7 /* SDL3.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL3.framework; path = SDL3.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F344FFBE2D3EB53C003F26D7 /* SDL_gpu_textengine.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = SDL_gpu_textengine.c; sourceTree = "<group>"; };
 		F3696FE3278F7107003A7F94 /* sdf.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = sdf.c; path = ../external/freetype/src/sdf/sdf.c; sourceTree = "<group>"; };
 		F384BB6B261EC0760028A248 /* autofit.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = autofit.c; path = ../external/freetype/src/autofit/autofit.c; sourceTree = "<group>"; };
@@ -687,9 +687,9 @@
 				DYLIB_CURRENT_VERSION = 201.3.0;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_TESTABILITY = YES;
-				"FRAMEWORK_SEARCH_PATHS[sdk=appletv*]" = "\"$(PROJECT_DIR)/iOS\"";
-				"FRAMEWORK_SEARCH_PATHS[sdk=iphone*]" = "\"$(PROJECT_DIR)/iOS\"";
-				"FRAMEWORK_SEARCH_PATHS[sdk=macosx*]" = "\"$(PROJECT_DIR)/macOS\"";
+				"FRAMEWORK_SEARCH_PATHS[sdk=appletv*]" = "\"$(BUILT_PRODUCTS_DIR)\"";
+				"FRAMEWORK_SEARCH_PATHS[sdk=iphone*]" = "\"$(BUILT_PRODUCTS_DIR)\"";
+				"FRAMEWORK_SEARCH_PATHS[sdk=macosx*]" = "\"$(BUILT_PRODUCTS_DIR)\"";
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					FT2_BUILD_LIBRARY,
@@ -704,7 +704,7 @@
 				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
 				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/../include\"";
 				INFOPLIST_FILE = "Info-Framework.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -743,9 +743,9 @@
 				DYLIB_COMPATIBILITY_VERSION = 201.0.0;
 				DYLIB_CURRENT_VERSION = 201.3.0;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				"FRAMEWORK_SEARCH_PATHS[sdk=appletv*]" = "\"$(PROJECT_DIR)/iOS\"";
-				"FRAMEWORK_SEARCH_PATHS[sdk=iphone*]" = "\"$(PROJECT_DIR)/iOS\"";
-				"FRAMEWORK_SEARCH_PATHS[sdk=macosx*]" = "\"$(PROJECT_DIR)/macOS\"";
+				"FRAMEWORK_SEARCH_PATHS[sdk=appletv*]" = "\"$(BUILT_PRODUCTS_DIR)\"";
+				"FRAMEWORK_SEARCH_PATHS[sdk=iphone*]" = "\"$(BUILT_PRODUCTS_DIR)\"";
+				"FRAMEWORK_SEARCH_PATHS[sdk=macosx*]" = "\"$(BUILT_PRODUCTS_DIR)\"";
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					FT2_BUILD_LIBRARY,
@@ -760,7 +760,7 @@
 				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
 				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/../include\"";
 				INFOPLIST_FILE = "Info-Framework.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
